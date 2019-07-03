@@ -1,0 +1,27 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: black;
+}
+
+.display-3,
+.display-4 {
+    color: #F7DC6F;
+}
+
+.menu,
+.pie {
+    background: grey;
+}
+
+.estrenos {
+    color: whitesmoke;
+}
+
+.card {
+    margin: 5px;
+    border: 2px solid #F7DC6F;
+}

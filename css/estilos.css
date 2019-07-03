@@ -1,0 +1,182 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: #000;
+    text-align: center;
+    margin-left: 20px;
+}
+
+.contenedor {
+    max-width: 1200px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(7, auto);
+    grid-gap: 20px;
+    grid-template-areas: "cabecera cabecera cabecera cabecera" "estrenos estrenos estrenos estrenos" "uno uno dos dos" "tres tres cuatro cuatro" "menu menu menu menu" "video video mapa mapa" "pie pie pie pie";
+}
+.col-xs-12{
+    background: red;
+}
+.cabecera {
+    width: 100%;
+    height: 900px;
+    background-image: url("../img/teatro.jpg");
+    text-align: center;
+    justify-self: stretch;
+    align-self: stretch;
+    grid-column-start: cabecera;
+    grid-column-end: cabecera;
+}
+
+h1 {
+    font-family: 'Open Sans', sans-serif;
+    color: #5DE058;
+    font-size: 125px;
+    text-shadow: 3px 3px 2px #666666;
+}
+
+img {
+    width: 100%;
+}
+
+.titulo {
+    width: 100%;
+    margin-top: 150px;
+}
+
+.estrenos {
+    width: 100%;
+    height: 70px;
+    background: #5DE058;
+    color: black;
+    font-family: 'Fjalla One', sans-serif;
+    font-size: 35px;
+    line-height: 70px;
+    text-align: center;
+    grid-column-start: estrenos;
+    grid-column-end: estrenos;
+}
+
+.uno,
+.dos,
+.tres,
+.cuatro {
+    width: 100%;
+    height: auto;
+    display: block;
+    background: white;
+    border: 4px solid #5DE058;
+}
+
+.uno {
+    grid-column-start: uno;
+    grid-column-end: uno;
+}
+
+.dos {
+    grid-column-start: dos;
+    grid-column-end: dos;
+}
+
+.tres {
+    grid-column-start: tres;
+    grid-column-end: tres;
+}
+
+.cuatro {
+    grid-column-start: cuatro;
+    grid-column-end: cuatro;
+}
+
+.unoUno,
+.dosDos,
+.tresTres,
+.cuatroCuatro {
+    text-align: center;
+    padding: 10px;
+}
+
+.tituloUno,
+.tituloDos,
+.tituloTres,
+.tituloCuatro {
+    font-size: 25px;
+    font-family: 'Fjalla One', sans-serif;
+}
+
+.textoUno,
+.textoDos,
+.textoTres,
+.textoCuatro {
+    margin: 10px;
+    padding: 10px;
+    font-size: 15px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.boton {
+    width: 90px;
+    height: 45px;
+    margin-bottom: 10px;
+    padding: 10px;
+    background: grey;
+    color: black;
+    border: 1px solid black;
+    font-size: 18px;
+    font-family: 'Fjalla One', sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+.menu {
+    width: 100%;
+    height: 45px;
+    text-align: left;
+    align-items: center;
+    margin: 5px auto;
+    padding: 5px;
+    background: #5DE058;
+    color: black;
+    font-size: 28px;
+    line-height: 28px;
+    font-family: 'Fjalla One', sans-serif;
+    display: block;
+    grid-column-start: menu;
+    grid-column-end: menu;
+}
+
+.menu ul>li {
+    display: inline-block;
+    text-decoration: none;
+    margin-right: 25px;
+}
+
+.mapa {
+    width: 50%;
+    grid-column-start: mapa;
+    grid-column-end: mapa;
+}
+
+.video {
+    width: 50%;
+    grid-column-start: video;
+    grid-column-end: video;
+}
+
+.pie {
+    width: 100%;
+    height: 25px;
+    grid-column-start: pie;
+    grid-column-end: pie;
+    padding: 10px;
+    font-size: 15px;
+    font-family: 'Open Sans', sans-serif;
+    background: #5DE058;
+    color: black;
+    text-align: center;
+}
